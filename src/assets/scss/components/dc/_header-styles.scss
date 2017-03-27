@@ -1,0 +1,146 @@
+.header {
+  padding-bottom: 80px;
+  background: url(../img/head_bg.png) no-repeat 40%/cover;;
+  width: 100%;
+
+  .top-header {
+    background-color: $dark-main-color;
+    color: $light-main-color;
+    height: 45px;
+    padding-top: 11px;
+    width: 100%;
+  }
+
+  .header-topic {
+    padding-bottom: 108px;
+
+  }
+
+  .guarantee {
+    padding-top: 28px;
+    div {
+      position: relative;
+      i {
+        left: -10px;
+        position: absolute;
+        top: 0;
+      }
+
+      p {
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.soc-part {
+  li {
+    min-height: 13px;
+    padding: 0 30px 0 0;
+    a {
+      position: relative;
+      .fa {
+        position: absolute;
+        left: 0;
+        top: 0;
+        &:hover {
+          color: $second-color;
+        }
+      }
+    }
+  }
+}
+
+.list-contact {
+  li {
+    font: 400 14px/1 'Lato', sans-serif;
+    padding-left: 45px;
+    position: relative;
+
+    &:first-child {
+      border-right: solid 1px $light-main-color;
+      padding-right: 15px;
+      img {
+        top: 3px;
+      }
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 15px;
+    }
+  }
+}
+
+.header-main {
+  padding: 43px 0 175px;
+
+  .header-name {
+    position: relative;
+
+    img {
+      position: absolute;
+      top: -13px;
+      left: 15px;
+    }
+
+    div {
+      padding-left: 75px;
+      span {
+        font: 700 24px/1 'Exo', sans-serif;
+        margin: 0;
+      }
+    }
+  }
+
+  .header-menu {
+
+    ul {
+
+      li {
+        font: 400 14px/1 'Lato', sans-serif;
+        margin: 0;
+        padding: 0 25px;
+
+        &:last-child {
+          padding-right: 0;
+        }
+
+        a {
+          color: $dark-main-color;
+        }
+      }
+    }
+
+  }
+
+  .header-registration {
+
+    li {
+      font: 400 14px/1 'Lato', sans-serif;
+      margin: 0;
+      padding: 0 18px 0 20px;
+      position: relative;
+      &:last-child {
+        padding-right: 0;
+      }
+
+      a {
+        color: $dark-main-color;
+      }
+
+      i {
+        color: $light-main-color;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+
+}
+
+
+

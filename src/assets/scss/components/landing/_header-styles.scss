@@ -1,0 +1,47 @@
+.top-section {
+  //position: relative;
+  //background: transparent;
+}
+.top-section {
+  background: url(../img/background_1.jpg);
+  background-size: 100%;
+  height: 420px;
+  padding: 0 375px;
+
+  .header-wrapper {
+    position: relative;
+
+    .header {
+      padding: 42px 0 170px;
+
+      .list-menu {
+        padding-top: 18px;
+      }
+    }
+  }
+  .about-us{
+    padding-bottom: 65px;
+
+    .about-us-holder h1{
+      text-align: center;
+    }
+  }
+}
+
+//.header-slider{
+//  position: absolute;
+//  top:0;
+//  left: 0;
+//  width: 100%;
+//  height: 100%;
+//}
+//
+//.header-slider-wrapper {
+//  height: 100%;
+//  min-height: 763px;
+//
+//  &.slide-1 {background:  url(../img/top-1.jpg) no-repeat 50%/cover;}
+//  &.slide-2 {background:  url(../img/top-2.jpg) no-repeat 50%/cover;}
+//  &.slide-3 {background:  url(../img/top-3.jpg) no-repeat 50%/cover;}
+//}
+

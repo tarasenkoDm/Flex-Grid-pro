@@ -1,0 +1,41 @@
+.statistic-wrapper {
+  background: url("../img/categories-background.jpg") no-repeat 54%/cover;
+  padding: 66px 0 69px;
+  position: relative;
+  width: 100%;
+
+  &:before {
+    background-color: rgba(0, 0, 0, .92);
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
+}
+
+.statistic-wrapper .statistic {
+
+  .category {
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
+
+    .statistic-count p {
+      color: #fff;
+      font-size: 40px;
+    }
+
+    .underline {
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+    .statistic-description {
+      p {
+        color: #fff;
+      }
+    }
+  }
+}

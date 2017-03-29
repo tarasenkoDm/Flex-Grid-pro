@@ -17,22 +17,23 @@
 }
 
 .statistic-wrapper .statistic {
+  position: relative;
+  z-index: 2;
 
   .category {
     font-weight: 700;
-    position: relative;
-    z-index: 2;
 
-    .statistic-count p {
-      color: #fff;
-      font-size: 40px;
+    .statistic-count {
+      position: relative;
+      padding-bottom: 30px;
+      p {
+        color: #fff;
+        font-size: 40px;
+      }
     }
 
-    .underline {
-      margin-top: 30px;
-      margin-bottom: 20px;
-    }
     .statistic-description {
+      padding-top: 20px;
       p {
         color: #fff;
       }

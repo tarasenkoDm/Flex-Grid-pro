@@ -49,32 +49,8 @@ ul{
 
 
 a{
-//  text-decoration: none;
-//  font:400 15px/1 'Montserrat', sans-serif;
   color: $light-main-color;
-//  transition: color ease-in-out 0.2s;
 }
-//
-//a:hover {
-//  color: $secondary-color;
-//}
-
-
-//.border{
-//  position: relative;
-//  padding-left: 19px;
-//}
-//
-//.border:before{
-//  background-color: #753d9d;
-//  border-radius: 5px;
-//  content: '';
-//  position: absolute;
-//  left: 0;
-//  top: 0;
-//  height: 100%;
-//  width: 5px;
-//}
 
 .btn{
   border: 2px solid $second-color;
@@ -110,15 +86,29 @@ a{
   color: $second-color;
 }
 
-.underline{
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
 
 .wrapper {
   padding: 80px 0;
 }
 
+
 .main-question{
+  padding-top: 30px;
   padding-bottom: 55px;
+}
+
+.block-topic{
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.underline:after{
+  background: $second-color;
+  border: 1px solid $second-color;
+  bottom: 0;
+  left: 50%;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 30px;
 }

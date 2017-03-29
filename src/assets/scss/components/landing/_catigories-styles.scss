@@ -4,8 +4,22 @@
     padding: 48px 0 62px;
     margin-bottom: 25px;
 
-    .underline {
-      margin-bottom: 20px;
+    .icon {
+      padding-bottom: 20px;
+      position: relative;
+
+      .icon-wrapper{
+        height: 61px;
+      }
+
+      .underline:after{
+        background: $light-main-color;
+        border: 1px solid $light-main-color;
+      }
+    }
+
+    .category-type {
+      padding-top: 18px;
     }
   }
 

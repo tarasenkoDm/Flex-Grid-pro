@@ -19,12 +19,22 @@
 
 $(document).ready(function () {
     $('.examples-slider').slick({
-        // infinite: true,
+        infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        // accessibility: false,
-        speed: 500,
-        // fade: true
+        // speed: 350,
+    });
+});
+
+
+
+$(document).ready(function () {
+    $('.testimonials-slider').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        // speed: 350,
     });
 });

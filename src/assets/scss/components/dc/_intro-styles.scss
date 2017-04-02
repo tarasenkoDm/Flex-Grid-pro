@@ -1,0 +1,26 @@
+.intro {
+  border-bottom: #e0e0e0 solid 3px;
+  padding: 70px 0;
+}
+.intro-article {
+  padding-top: 10px;
+  p {
+    padding: 41px 0 50px;
+  }
+  .button-holder{
+    text-align: left;
+    padding-bottom: 8px;
+  }
+}
+
+.intro-title {
+  padding: 8px 0 8px 20px;
+}
+.intro-title-first-line {
+  font:600 36px/1 'Montserrat', sans-serif;
+}
+
+.intro-title-second-line {
+  font:300 36px/1 'Montserrat', sans-serif;
+  padding-top: 18px;
+}

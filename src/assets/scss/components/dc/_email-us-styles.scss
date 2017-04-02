@@ -1,0 +1,21 @@
+.email-us-wrapper {
+  padding: 60px 0 100px;
+  .btn {
+    width: 170px;
+  }
+  .coupons {
+    padding-left: 0;
+    h4 {
+      padding-bottom: 15px;
+    }
+    p {
+      text-transform: uppercase;
+    }
+  }
+  .email-input {
+    input {
+      border: none;
+      width: 100%;
+    }
+  }
+}

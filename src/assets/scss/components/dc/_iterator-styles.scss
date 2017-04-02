@@ -1,0 +1,59 @@
+.iterator-wrapper {
+  background: grey;
+  padding: 20px;
+
+  @for $i from 1 to 6 {
+    .iterator-#{$i} {
+      background: #000;
+      height: 20px;
+      width: #{20*$i}px;
+    }
+  }
+
+  .count-list {
+    div {
+      width: 100%;
+      &:before{
+        display: inline-block;
+        font: 400 16px/1 'Lato', sans-serif;
+        width: 100%;
+      }
+    }
+    @each $count-list in (one two three four five) {
+      .#{$count-list}:before {
+        background: #fff;
+        content: "#{$count-list}";
+      }
+    }
+  }
+
+  .count-list-color {
+    div {
+      width: 100%;
+      &:before{
+        display: inline-block;
+        font: 400 16px/1 'Lato', sans-serif;
+        width: 100%;
+      }
+    }
+
+
+    @each $count-list-color in (
+            one #FF0000 #FFFF00,
+            two #FFFF00 #0000FF ,
+            three #0000FF #FFFF00,
+            four #FFFF00 #FF0000,
+            five #008000 #fff) {
+      .#{nth($count-list-color, 1)}:before {
+        content: "#{nth($count-list-color, 1)}";
+        color: nth($count-list-color, 2);
+        background: nth($count-list-color, 3);
+      }
+    }
+  }
+
+}
+
+.xxx {
+  padding: 40px;
+}

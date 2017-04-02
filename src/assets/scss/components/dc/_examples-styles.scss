@@ -1,0 +1,44 @@
+.examples-wrapper {
+  background: url("../img/examples-bg.jpg");
+  width: 100%;
+  height: 100%;
+
+  .examples-slider {
+    padding: 60px 0 60px;
+
+    .slick-arrow {
+      color: transparent;
+      font-size: 0;
+      position: absolute;
+      height: 35px;
+      width: 35px;
+      top: -27px;
+    }
+    .slick-prev {
+      background: $main-color;
+      right: 45px;
+      &:before {
+        font-family: FontAwesome;
+        content: "\f053";
+        font-size: 15px;
+        color: #fff;
+      }
+    }
+    .slick-next {
+      background: $second-color;
+      right: 0;
+      &:before {
+        font-family: FontAwesome;
+        content: "\f054";
+        font-size: 15px;
+        color: #fff;
+      }
+    }
+  }
+
+  .img-wrapper{
+    img{
+      width: 100%;
+    }
+  }
+}

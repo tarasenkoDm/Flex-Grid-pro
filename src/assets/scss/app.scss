@@ -51,13 +51,17 @@
 //@include motion-ui-animations;
 
 @import "components/resets";
-@import "components/landing/header-styles";
-@import "components/dc/header-styles";
-@import "components/landing/statistic-styles";
-@import "components/landing/catigories-styles";
-@import "components/landing/graphic-design-styles";
-@import "components/landing/examples-styles";
-@import "components/landing/intro-styles";
+@import "components/dc/_header-styles";
+@import "components/dc/_statistic-styles";
+@import "components/dc/_catigories-styles";
+@import "components/dc/_graphic-design-styles";
+@import "components/dc/_examples-styles";
+@import "components/dc/_intro-styles";
+@import "components/dc/_partners-styles";
+@import "components/dc/_email-us-styles";
+@import "components/dc/_iterator-styles";
+@import "components/dc/_testimonials-styles";
+@import "components/dc/_footer-styles";
 @import "components/landing/map";
 @import "vendor/slick";
 @import "components/landing/all";

@@ -36,9 +36,44 @@
     }
   }
 
-  .img-wrapper{
-    img{
+  .slide-wrapper .img-wrapper {
+    position: relative;
+
+    img {
       width: 100%;
+    }
+
+    .hover-wrapper {
+      visibility: hidden;
+      .fa {
+        color: $second-color;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+      .examples-statistic-list {
+        margin: 0;
+        background: $second-color;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        .count {
+          border-left: 2px solid #fff;
+        }
+        p {
+          color: #fff;
+          font-size: 14px;
+          font-weight: 700;
+          text-align: center;
+          padding: 15px 0;
+        }
+      }
+    }
+    &:hover{
+      .hover-wrapper{
+        visibility: visible;
+      }
     }
   }
 }

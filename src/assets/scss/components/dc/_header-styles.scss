@@ -101,14 +101,16 @@
     }
   }
 
-  .header-menu {
-
-    .menu-list {
+  .header-menu .menu-list {
 
       li {
         font: 400 14px/1 'Lato', sans-serif;
         margin: 0;
         padding: 0 25px;
+
+        & a:hover{
+          color: $second-color;
+        }
 
         &:last-child {
           padding-right: 0;
@@ -120,24 +122,32 @@
             margin: 0;
             position: absolute;
             left: 5px;
-            //visibility: hidden;
+            z-index: 2;
+            visibility: hidden;
             li {
               background: $dark-main-color;
-              border-top: 2px solid $light-main-color;
+              border-top: 1px solid $light-main-color;
               width: 232px;
               padding: 20px;
-              position: relative;
               &:hover{
                 background: $second-color;
+              }
 
+              &.inside-menu-container{
+                position: relative;
                 .inside-menu {
                   position: absolute;
                   top: 20%;
                   left: 91%;
-                  visibility: visible;
-                  z-index: 2;
+                  visibility: hidden;
                 }
               }
+              &.inside-menu-container:hover{
+                .inside-menu {
+                  visibility: visible;
+                }
+              }
+
               &:first-child{
                 border-top: 3px solid $second-color;
               }
@@ -153,28 +163,12 @@
                 transform: translateY(-100%);
 
               }
-
-              //.inside-menu-container{
-              //  .inside-menu {
-              //    position: absolute;
-              //    top: 0;
-              //    left: 90%;
-              //    visibility: hidden;
-              //    z-index: 2;
-              //  }
-              //}
-
-              .inside-menu-container:hover{
-                .inside-menu {
-                  visibility: visible;
-                }
-              }
             }
           }
         }
 
-        &:first-child:hover {
-          .dropdown-menu {
+        &:first-child:hover{
+          .dropdown-menu{
             visibility: visible;
           }
         }
@@ -185,8 +179,6 @@
           color: $dark-main-color;
         }
       }
-    }
-
   }
 
   .header-registration {
@@ -202,14 +194,19 @@
 
       a {
         color: $dark-main-color;
+        &:hover{
+          color: $second-color;
+          i{
+            color: $second-color;}
+        }
+        i {
+          color: $light-main-color;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
       }
 
-      i {
-        color: $light-main-color;
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
     }
   }
 

@@ -1,18 +1,26 @@
 .categories {
 
   .category {
-    padding: 48px 0 62px;
+    padding-top: 48px;
+    padding-bottom: 62px;
     margin-bottom: 25px;
+
+    &:hover {
+      //border: 1px solid red;
+      background: url("../img/category-bg.jpg") no-repeat;
+        box-shadow: 2px -4px 11px 0px rgba(0, 0, 0, 0.2);
+
+    }
 
     .icon {
       padding-bottom: 20px;
       position: relative;
 
-      .icon-wrapper{
+      .icon-wrapper {
         height: 61px;
       }
 
-      .underline{
+      .underline {
         background: $light-main-color;
         border: 1px solid $light-main-color;
       }
@@ -25,5 +33,9 @@
 
   .categories-btn {
     padding-top: 12px
+  }
+
+  .category-bg {
+    background: url("../img/category-bg.jpg") ;
   }
 }

@@ -2,16 +2,17 @@
 
   border-top: 3px solid $second-color;
 
-  .main-footer-wrapper {
+  .footer-main-wrapper{
     background: url("../img/testimonials-bg.jpg");
     padding: 60px 0 105px;
 
   }
 
-  .main-footer {
+  .footer-main{
     position: relative;
 
-    ul {
+    .footer-quick-links-list,
+    .footer-my-account-list {
       padding-top: 20px;
       li {
         border-bottom: 1px solid $light-main-color;
@@ -23,6 +24,10 @@
         }
         &:hover {
           color: $second-color;
+        }
+
+        a {
+          color: inherit;
         }
 
         p {
@@ -37,7 +42,7 @@
       }
     }
 
-    .company-footer {
+    .footer-company{
       padding-left: 0;
       position: relative;
       img {
@@ -82,7 +87,7 @@
             }
             .fa {
               position: absolute;
-              transform: translate(50%, 50%);
+              transform: translate(50%, 40%);
               &:visited {
                 color: $light-main-color
               }
@@ -92,7 +97,7 @@
         }
       }
     }
-    .newsletter-footer {
+    .footer-newsletter{
       p {
         line-height: 1.5;
         padding: 30px 0 18px;
@@ -130,13 +135,20 @@
     }
   }
 
-  .bottom-footer-wrapper {
+
+
+
+
+
+
+
+  .footer-bottom-wrapper{
     background-color: $dark-main-color;
     color: $light-main-color;
     padding: 20px 0;
     width: 100%;
 
-    .bottom-footer {
+    .footer-bottom {
       color: $light-main-color;
 
       .copyright li {

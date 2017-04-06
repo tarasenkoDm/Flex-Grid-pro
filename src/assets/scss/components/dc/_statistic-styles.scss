@@ -1,6 +1,6 @@
 .statistic-wrapper {
   background: url("../img/categories-background.jpg") no-repeat 54%/cover;
-  padding: 66px 0 69px;
+  padding: 66px 0 19px;
   position: relative;
   width: 100%;
 
@@ -22,6 +22,7 @@
 
   .category {
     font-weight: 700;
+    padding-bottom: 50px;
 
     .statistic-count {
       position: relative;
@@ -36,7 +37,14 @@
       padding-top: 20px;
       p {
         color: #fff;
+        text-transform: uppercase;
       }
     }
+  }
+}
+
+@media (max-width: 640px) {
+  .statistic-wrapper {
+    padding: 20px 0 0;
   }
 }

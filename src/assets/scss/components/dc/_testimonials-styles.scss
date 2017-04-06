@@ -5,15 +5,19 @@
   .testimonials-slider {
 
     .slick-arrow {
+      background: $main-color;
       color: transparent;
+      cursor: pointer;
       font-size: 0;
       position: absolute;
       height: 35px;
       width: 35px;
       bottom: -35px;
+      &:hover {
+        background: $second-color;
+      }
     }
     .slick-prev {
-      background: $main-color;
       left: 47%;
       &:before {
         font-family: FontAwesome;
@@ -24,7 +28,6 @@
 
     }
     .slick-next {
-      background: $second-color;
       left: 51%;
       &:before {
         font-family: FontAwesome;

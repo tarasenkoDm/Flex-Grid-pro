@@ -114,3 +114,15 @@ a{
   width: 30px;
 }
 
+
+@media (max-width: 640px) {
+
+  h1, h2, h3, h4, p{
+    display: inline-block;
+    text-align: center;
+  }
+
+  .wrapper {
+    padding: 20px 0;
+  }
+}
